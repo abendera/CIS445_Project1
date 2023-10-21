@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aidan's Portfollio</title>
+    <style>
+        ul 
+        {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgb(177, 175, 175);
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        li 
+        {
+          float: left;
+        }
+        
+        li a 
+        {
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 5px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover 
+        {
+          background-color: #565555;
+        }
+
+        h2, p, div
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
+    <ul>
+        <li><a class="active" href="#aboutme">About Me</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#qualifications">Qualifications</a></li>
+        <li><a href="#communications">Contact</a></li>
+    </ul>
+
+    <div id="aboutme" style="background-color: rgb(177, 175, 175);; margin:10px">
+        <h2 style="text-align: center;">About Me</h2>
+        <p>
+            Hi I'm Aidan Bendera I am currently a student at Bradley University.
+            I enjoy hanging out with friends, playing video games, and working on cars.
+            I am from Oak Brook, Illinois. So far at Bradley I have taken classes on C++ and Java.
+        </p>
+     </div>
+
+     <div id="reflection" style=" background-color: rgb(177, 175, 175); margin:10px">
+        <h2 style="text-align: center;">Reflection</h2>
+        <p>
+            Ever since I was a kid I’ve always been fascinated by technology. In my family I am known as the family tech support, 
+            they all come to me with their tech issues and I am always happy to help them. I have repaired and built many computers 
+            and have enjoyed every second of doing so. When it was time to figure out my degree for college I knew immediately it had to 
+            be something that involves technology. I am enjoying my time at Bradley University and I find the classes that I am taking are very 
+            interesting and beneficial for my knowledge. I am looking forward to finishing my degree in the next 
+            few years and using the knowledge I’ve learned in my profession.
+        </p>
+     </div>
+
+     <div id="achievements" style=" background-color: rgb(177, 175, 175); margin:10px">
+        <h2 style="text-align: center;">Achievements</h2>
+        <dl>
+            <p>I am certified in these following programs from Certiport</p>
+            <dt>- Microsoft Office Word 2016</dt>
+            <dd>- Credential ID - wAo4q-22XH</dd>
+            <dt>- Microsoft Office PowerPoint 2016</dt>
+            <dd>- Credential ID - dEs4-XVHn</dd>
+            <dt>- Microsoft Office Excel 2016</dt>
+            <dd>- Credential ID - wL9GF-FMps</dd>
+            <dt>- Microsoft Office Outlook 2016</dt> 
+            <dd>-Credential ID - wL6Em-HaQ9</dd>
+            <p>You can verify the legitimacy of these certificates by going to <a target="_blank" href="http://verify.certiport.com">verify.certiport.com</a> 
+                and typing in those credential ID's.</p>
+        </dl>
+     </div>
+
+     <div id="qualifications" style=" background-color: rgb(177, 175, 175); margin:10px">
+        <h2 style="text-align: center;">Qualifications</h2>
+        <p>
+            I am currently getting my bachelors degree in Computer Information Systems at Bradley University. 
+            I have no current plans to get my masters at this moment but my mind may change in the future.
+        </p>
+     </div>
+
+     <div id="communications" style=" background-color: rgb(177, 175, 175); margin:10px">
+        <h2 style="text-align: center;">Contact</h2>
+        <form action="method">
+            <p>
+            <label for="message">Message:</label><br>
+            <input type="text" id="message" name="message">
+        </p>
+        </form>
+        <input type="submit">
+     </div>
+
 </body>
 </html>
